@@ -11,7 +11,7 @@ class Main: Application() {
     private var runtimeMxBean = ManagementFactory.getRuntimeMXBean()!!
 
     private val httpHandlersMap = mapOf<String, Class<out HttpServlet>>(
-            "/hello" to HelloController::class.java
+            "/" to HelloController::class.java
     )
 
 
